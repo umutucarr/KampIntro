@@ -9,7 +9,7 @@ namespace ClassIntro
             string adi = "umut";
             int yas = 23;
 
-            Kurs kurs1=new Kurs();
+            Kurs kurs1 = new Kurs();
             kurs1.KursAdi = "c#";
             kurs1.Egitmen = "Engin Demiroğ";
             kurs1.IzlenmeOranı = 68;
@@ -31,10 +31,10 @@ namespace ClassIntro
 
             //Console.WriteLine(kurs1.KursAdi+" "+kurs1.Egitmen);
 
-            Kurs[] kurslar = new Kurs[] {kurs1,kurs2,kurs3,kurs4 };
+            Kurs[] kurslar = new Kurs[] { kurs1, kurs2, kurs3, kurs4 };
             foreach (var kurs in kurslar)
             {
-                Console.WriteLine(kurs.KursAdi+" "+kurs.Egitmen);
+                Console.WriteLine(kurs.KursAdi + " " + kurs.Egitmen);
             }
         }
     }
