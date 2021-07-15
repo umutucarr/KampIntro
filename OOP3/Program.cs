@@ -20,9 +20,9 @@ namespace OOP3
             Console.WriteLine("---------------------ikinci yöntem---------------------------");
             List<ILoggerService> loggers = new List<ILoggerService> { new DataBaseLoggerService(),new FileLoggerService(),new SmsLoggerService() };
             applicationManager.MakeAnApplication(morgateCreditManager,loggers);
-
+            Console.WriteLine("---------------------ödeme planları--------------------------");
             List<ICreditManager> credits = new List<ICreditManager>() {financeCreditManager,vehicleCreditManager,morgateCreditManager};
-            //applicationManager.MakeACreditPreliminaryİnformation(credits);
+            applicationManager.MakeACreditPreliminaryİnformation(credits);
 
             
         
